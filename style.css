@@ -1,0 +1,386 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --dark:#0f0b1a;
+    --purple:#8b5cf6;
+    --blue:#3bb2f6;
+    --text:#f5f3ff;     
+}
+body{
+    color: var(--text);
+    background-color: var(--dark);
+    background-image: linear-gradient(rgba(15, 11, 26, 0.45), rgba(15, 11, 26, 0.45)), url(images/Background.jpeg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    margin: 20px;
+    border-radius: 25px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+}
+header h1{
+    font-size: 32px;
+    color: var(--purple);
+    font-weight: bold;
+}
+header nav{
+    font-size: larger;
+    display: flex;
+    gap: 30px;
+    padding: 10px 20px;
+}
+header a{
+    color: var(--purple);
+    transition: 0.3s;
+}
+header a:hover{
+    color: var(--blue);
+}
+main{
+    margin: 20px;
+}
+.intro{
+    min-height: 200px;
+    display: flex;
+    flex-direction: column;
+    /* animation: fadeUp 0.8s; */
+}
+.intro h1{
+    font-size: 32px;
+
+}
+.intro h2{
+    color: var(--blue);
+}
+.intro p{
+    color: var(--text);
+    font-size: 18px;
+}
+ .intro button{
+    font-size: large;
+    border-radius: 15px;
+    padding: 8px;
+    color: var(--text);
+    background: var(--purple);
+    margin-top: 10px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.intro button:hover{
+    color: var(--blue);
+    transform: translateY(-5px);
+}
+.introbut{
+        display: flex;
+        gap: 30px;
+}
+.aboutme{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 15px;
+    margin-top: 15px;
+    
+}
+.aboutme h2{
+    color: var(--blue);
+    font-size: 28px;
+    padding: 15px 0px;
+}
+.aboutme p{
+    color: var(--text);
+    font-size: 18px;
+    padding: 5px;
+}
+.myservice{
+    padding: 15px;
+    margin: 15px;
+  
+}
+.myservice h2{
+    color: var(--blue);
+}
+.service-cards{
+    display: flex;
+    margin: 15px;
+    gap: 10px;
+}
+.service-cards h3{
+    color: var(--purple);
+    margin: 10px;
+}
+.service-cards p{
+    margin: 10px;
+    color: var(--text);
+}
+.service-card{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    border-radius: 15px;
+    transition: 0.3s;
+}
+.service-card:hover{
+    transform: translateY(-5px);
+}
+.mywork{
+    padding: 15px;
+    margin: 15px;
+   
+}
+.mywork h2{
+    color: var(--blue);
+    font-size: 28px;
+}
+.project-card{
+    display: flex;
+    gap: 30px;
+    margin: 20px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+    padding: 15px;
+    transition: 0.3s;
+}
+.project-card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 5);
+}
+.project-img{
+    height: 350px;
+    width: 700px;
+}
+.project-img img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.project-info{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+}
+.project-info h3{
+    font-size: 26px;
+    color: var(--blue);
+    padding: 5px;
+}
+.project-info h4{
+    font-size: 22px;
+    padding: 5px;
+}
+.project-info p{
+    font-size: 18px;
+    color: var(--text);
+    padding: 8px;
+    margin-bottom: 25px;
+}
+.project-info a{
+    padding: 5px;
+    color: var(--text);
+    border-radius: 15px;
+    margin: 20px;
+    background: var(--purple);
+    transition: 0.3s;
+}
+.project-info a:hover{
+    color: var(--blue);
+    transform: translateY(-3px);
+}
+.links{
+    display: flex;
+    gap: 20px;
+}
+.contact{
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    padding: 15px;
+    margin: 15px;
+    border-radius: 25px;
+
+}
+.contact h2{
+    font-size: 28px;
+    color: var(--blue);
+}
+.contact p{
+    font-size: 22px;
+    color: var(--text);
+    margin-bottom: 30px;
+}
+.contact-cards{
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0 40px;
+}
+.card{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    min-height: 200px;
+    padding: 15px;
+    background: var(--dark);
+    border-radius: 35px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.card:hover{
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.7);
+}
+.card i{
+    font-size: 80px;
+    margin-bottom: 30px;
+    color: var(--blue);
+    transition: 0.3s;
+}
+.card:hover i{
+    transform: scale(1.1);
+}
+.card a{
+    font-size: 30px;
+    color: var(--purple);
+}
+footer{
+    background: var(--dark);
+    text-align: center;
+    margin-top: 50px;
+    padding: 8px 0;
+}
+.aboutme, .myservice, .mywork, .contact, .intro{
+        transition: all 0.8s ease;
+}
+.scroll-hidden{
+    opacity: 0;
+    transform: translateY(100px);
+}
+
+.contact-form{
+    max-width: 700px;
+    margin: 80px auto;
+    padding: 30px;
+    background: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 25px;
+}
+
+.contact-form h2{
+    color: var(--blue);
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.contact-form p{
+    color: var(--text);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.contact-form form{
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form label{
+    color: var(--text);
+    font-size: 20px;
+    margin: 10px 0;
+}
+
+.contact-form input,
+.contact-form select,
+.contact-form textarea{
+    font-size: 18px;
+    padding: 12px;
+    border: none;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+
+.contact-form textarea{
+    min-height: 150px;
+    resize: vertical;
+}
+
+.contact-form .submit{
+    width: fit-content;
+    padding: 10px 25px;
+
+    color: var(--text);
+    background: var(--purple);
+
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.loader{
+    display: none;
+    width: 40px;
+    height: 40px;
+    border: 3px solid rgba(255, 255, 255, 0.3);
+    border-top: 5px solid var(--purple);
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+@keyframes spin{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+@media(max-width: 768px){
+    header{
+        flex-direction: column;
+        gap: 10px;
+    }
+    header nav{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project-card{
+        flex-direction: column;
+    }
+    .project-img{
+        width: 100%;
+        height: 250px;
+    }
+    .service-cards{
+        flex-direction: column;
+    }
+    .contact-cards{
+        flex-direction: column;
+        padding: 0;
+    }
+    .intro h1{
+        font-size: 26px;
+    }
+    .intro p{
+        font-size: 16px;
+    }
+    .introbut{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .intro button{
+        width: 100%;
+    }
+}
